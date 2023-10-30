@@ -3,6 +3,7 @@ import Feira from "pages/Feira";
 import Login from "pages/Login";
 import { useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { UserConntext } from 'Common/Context/Usuario'
 
 function Router() {
   const [nome, setNome] = useState('');
