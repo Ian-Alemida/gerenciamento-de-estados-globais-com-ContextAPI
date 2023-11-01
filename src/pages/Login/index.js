@@ -10,6 +10,7 @@ import {
   InputAdornment 
 } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
+import { UserContext } from 'Common/Context/Usuario';
 
 function Login({ nome, setNome, saldo, setSaldo }) {
   const history = useHistory();
