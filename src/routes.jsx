@@ -13,12 +13,9 @@ function Router() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <Login
-            nome={nome}
-            setNome={setNome}
-            saldo={saldo}
-            setSaldo={setSaldo}
-          />
+          <UserConntext.Provider value={{nome, setNome, saldo, setSaldo}}>
+            <Login/>
+          </UserConntext.Provider>
         </Route>
         <Route path="/feira">
           <Feira />
