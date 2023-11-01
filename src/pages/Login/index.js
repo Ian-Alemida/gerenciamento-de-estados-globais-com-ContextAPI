@@ -40,7 +40,7 @@ function Login({ nome, setNome, saldo, setSaldo }) {
         startAdornment={
           <InputAdornment position="start">
             R$
-          </InputAdornment>
+          </InputAdornment> 
         }
       />
       </InputContainer>
